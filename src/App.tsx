@@ -10,6 +10,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import ArticlesPage from './pages/ArticlesPage';
 import Layout from './components/Layout';
 import FullArticle from './pages/FullArticle';
+import EditArticle from './pages/EditArticle';
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ const App: React.FC = () => {
           >
             <Route index element={<ArticlesPage />} /> {/* Default path */}
             <Route path="/article/:id" element={<FullArticle />} />
+            <Route path="/edit-article/:id" element={<EditArticle />} />
             <Route path="admin" element={<AdminDashboard />} />
           </Route>
           {/* Fallback route */}

@@ -70,6 +70,7 @@ social-news-platform/
 │   ├── pages/              # Page components
 │   │   ├── AdminDashboard.tsx
 │   │   ├── FullArticle.tsx
+│   │   ├── EditArticle.tsx
 │   │   └── ArticlesPage.tsx
 │   ├── styles/             # CSS styles
 │   │   └── index.css
