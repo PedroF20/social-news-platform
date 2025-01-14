@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Breaking News: React 19 Released",
+    "description": "New version of the famous framework is available",
+    "category": "Engineering",
+    "content": "React 19 introduces several new features, including actions and new hooks.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 2,
+    "title": "New in Ruby 3.4",
+    "description": "What is new on this new version?",
+    "category": "Engineering",
+    "content": "If you want to learn more about this new feature, check out the proposal and the documentation. Read the Ruby 3.4 changelog to discover all the fun available in Ruby 3.4.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 3,
+    "title": "Drizzle ORM Crash Course",
+    "description": "Drizzle ORM is a simple, lightwiegt ORM for TypeScript",
+    "category": "Engineering",
+    "content": "Drizzle ORM is a simple, lightweight ORM for TypeScript. It is designed to be simple to use and easy to understand. It is designed to be used with MySQL databases, but can be easily extended to work with other databases. You can reach out more details on Drizzle ORM.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 4,
+    "title": "Testing with JWT in .NET APIs",
+    "description": "JSON Web Tokens (JWT) are a compact, URL-safe means of representing claims between two parties",
+    "category": "Engineering",
+    "content": "In .NET APIs, JWT is integrated through middleware for authentication and authorization, allowing developers to enforce access rules based on claims and roles.",
+    "published": false,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 5,
+    "title": "Design (UI/UX) course for Developers?",
+    "description": "I'm looking for the best UI / UX design course for the developers",
+    "category": "Design",
+    "content": "Wanna learn all about design, from color theory to typography, UX for mobile especially. Content can be based on Sketch or Figma. I have some experiences with those apps.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 6,
+    "title": "Design localization with Localazy Figma plugin",
+    "description": "Learn how to do it with Localazy and Figma",
+    "category": "Design",
+    "content": "With Figma & Localazy, you can quickly test the compatibility of your design when new languages are introduced, translate banners and other pieces of visual content. After that, download translated strings to use them in your project.",
+    "published": false,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 7,
+    "title": "Design approaches of Mobile-first, Desktop-first, and Responsive Web Design",
+    "description": "This blog post is about the approaches of building a design for multiple screen sizes.",
+    "category": "Design",
+    "content": "Generally, Design experts define some key concepts that ensure interusability for any cross-platform UX, for a coherent experience. These concepts include Composition of functionality across those platforms, Consistency of interfaces across these devices, and Continuity of content and data for possible transitions between platforms.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 8,
+    "title": "Breaking News: React 19 Released",
+    "description": "New version of the famous framework is available",
+    "category": "Design",
+    "content": "React 19 introduces several new features, including actions and new hooks.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 9,
+    "title": "Design Reviews for Existing Features",
+    "description": "Recently I've taken on the project of helping organize my team's design review process",
+    "category": "Design",
+    "content": "How does your team maintain knowledge about your existing features? How do you go about figuring them out in the absence of updated (or any) documentation? Are there any other questions you would ask in a design review for an existing features?",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 10,
+    "title": "Marketing Your Mobile App, The Steps For Continued Success",
+    "description": "Here are some tips for continued success in marketing your app to new users and maintaining your existing userbase.",
+    "category": "Marketing",
+    "content": "If people are using your app constantly, it is a sign that have made a connection with the product. Give them the opportunity to express their opinions with a popup invitation to leave a review, but remember that user experience should not be sacrificed by this tactic.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 11,
+    "title": "Marketing to Developers in 2024",
+    "description": "Developers have an outsized impact on buying decisions compared to most individual contributors",
+    "category": "Marketing",
+    "content": "In this article, we'll talk a bit about what makes marketing to developers tricky, developer advocacy, and our favorite way to market to developers. (Hint: Educating developers is marketing to them).",
+    "published": false,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 12,
+    "title": "Marketing Games as a Part of Brand Strategy",
+    "description": "Why do a brand might need a marketing game?",
+    "category": "Marketing",
+    "content": "Let us briefly explain how to use mobile games in a brand strategy and how to build a competitive advantage thanks to them.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 13,
+    "title": "Marketing a SaaS Product as a Solo Developer",
+    "description": "My marketing plan is simple, find X customers to pay me Y amount every month to achieve my first Z MRR",
+    "category": "Marketing",
+    "content": "Marketing has changed drastically over the years from a traditional marketing approach to digital marketing and even at that, we are still seeing different diversities in digital marketing.",
+    "published": false,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 14,
+    "title": "Marketing Tips for Developers",
+    "description": "Developers hate marketing",
+    "category": "Marketing",
+    "content": "That's why there's so much content by dev marketers showing other dev marketers how to promote dev-centric stuff without annoying the technical audience in the process.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 15,
+    "title": "Marketing Your Mobile App, The Acquisition Stage",
+    "description": "With a user acquisition strategy, the possibilities are endless",
+    "category": "Marketing",
+    "content": "Aim to get as many downloads as possible in the first week after launch. The more rapidly your app gets downloads, the higher it will rank in the App Store search results.",
+    "published": false,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 16,
+    "title": "Marketing Strategies",
+    "description": "Here are five easy but effective marketing strategies to give your business a boost",
+    "category": "Marketing",
+    "content": "In today's fast-moving world, having a good marketing plan is crucial for making your business stand out in a crowded market and attracting customers.",
+    "published": false,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 17,
+    "title": "Marketing strategy - How to go beyond propensity models",
+    "description": "To answer these types of questions one can build a model based on historical data.",
+    "category": "Marketing",
+    "content": "These models work very well to kick-off a marketing data driven strategy but they quickly show their limitations. We will discuss these limitations briefly and propose a different approach.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 18,
+    "title": "Query Data with DynamoDB",
+    "description": "How would you get insights from a DynamoDB table?",
+    "category": "Engineering",
+    "content": "While relational databases have great tools like SQL, DynamoDB queries look slightly different.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 19,
+    "title": "Auto Resize multiline TextInput in React Native",
+    "description": "If you are not updating a text value programatically",
+    "category": "Engineering",
+    "content": "If you are updating a text value programatically by using setState.",
+    "published": true,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  },
+  {
+    "id": 20,
+    "title": "Understanding var, let, and const in JavaScript: A Comprehensive Guide",
+    "description": "JavaScript offers three ways to declare variables: var, let, and const",
+    "category": "Engineering",
+    "content": "Understanding the differences between these keywords is essential for writing clean, maintainable, and bug-free code. This post explores the distinctions in scope, reassignment and redeclaration, and the best practices for using each declaration type.",
+    "published": false,
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+  }
+]
