@@ -11,6 +11,7 @@ const EditArticle: React.FC = () => {
   );
   const article = articles.find((a) => a.id === Number(id));
 
+  // State variables for the article edition
   const [title, setTitle] = useState(article?.title || '');
   const [content, setContent] = useState(article?.content || '');
   const [description, setDescription] = useState(article?.description || '');
@@ -21,6 +22,7 @@ const EditArticle: React.FC = () => {
     return <p className="p-6 text-red-500">Article not found.</p>;
   }
 
+  // Saves the edited article
   const handleSave = () => {
     const updatedArticles = articles.map((a) =>
       a.id === article.id

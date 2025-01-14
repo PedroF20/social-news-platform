@@ -15,7 +15,7 @@
     "category": "Engineering",
     "content": "If you want to learn more about this new feature, check out the proposal and the documentation. Read the Ruby 3.4 changelog to discover all the fun available in Ruby 3.4.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://d604h6pkko9r0.cloudfront.net/wp-content/uploads/2024/12/13103820/cover-ruby-1-png.webp"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "category": "Engineering",
     "content": "Drizzle ORM is a simple, lightweight ORM for TypeScript. It is designed to be simple to use and easy to understand. It is designed to be used with MySQL databases, but can be easily extended to work with other databases. You can reach out more details on Drizzle ORM.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJVdzaa_OAXAsyn7p6VGkbrF6Q52_alc7jFQ&s"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "category": "Engineering",
     "content": "In .NET APIs, JWT is integrated through middleware for authentication and authorization, allowing developers to enforce access rules based on claims and roles.",
     "published": false,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://play-lh.googleusercontent.com/3C-hB-KWoyWzZjUnRsXUPu-bqB3HUHARMLjUe9OmPoHa6dQdtJNW30VrvwQ1m7Pln3A=w240-h480-rw"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "category": "Design",
     "content": "Wanna learn all about design, from color theory to typography, UX for mobile especially. Content can be based on Sketch or Figma. I have some experiences with those apps.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://sites.p12digital.com.br/wp-content/uploads/2024/03/ux-ui-00.png"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "category": "Design",
     "content": "With Figma & Localazy, you can quickly test the compatibility of your design when new languages are introduced, translate banners and other pieces of visual content. After that, download translated strings to use them in your project.",
     "published": false,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://blog.greggant.com/images/posts/2019-04-25-figma/Figma.png"
   },
   {
     "id": 7,
@@ -60,16 +60,16 @@
     "category": "Design",
     "content": "Generally, Design experts define some key concepts that ensure interusability for any cross-platform UX, for a coherent experience. These concepts include Composition of functionality across those platforms, Consistency of interfaces across these devices, and Continuity of content and data for possible transitions between platforms.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Qkhktoax_Ddf9CeLABFfDiiLivQoIGrQVw&s"
   },
   {
     "id": 8,
-    "title": "Breaking News: React 19 Released",
-    "description": "New version of the famous framework is available",
+    "title": "InVision shut down",
+    "description": "Got overrun by Figma",
     "category": "Design",
-    "content": "React 19 introduces several new features, including actions and new hooks.",
+    "content": "UX design company InVision has announced plans to discontinue its design collaboration services at the end of 2024. In a blog post on the company's site, CEO Michael Shenkman announced the impending shutdown, while simultaneously ensuring users that nothing will be changing about the service over the next few months.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://www.bairesdev.com/wp-content/uploads/2021/07/InVision.svg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "category": "Design",
     "content": "How does your team maintain knowledge about your existing features? How do you go about figuring them out in the absence of updated (or any) documentation? Are there any other questions you would ask in a design review for an existing features?",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://uicollabo.com/en/en-common/wp-content/uploads/2023/03/design_review_process.jpg"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "category": "Marketing",
     "content": "If people are using your app constantly, it is a sign that have made a connection with the product. Give them the opportunity to express their opinions with a popup invitation to leave a review, but remember that user experience should not be sacrificed by this tactic.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLdPTVT5IQkn1ji2Y3bsrW3Inu5BOG0jx6Q&s"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "category": "Marketing",
     "content": "In this article, we'll talk a bit about what makes marketing to developers tricky, developer advocacy, and our favorite way to market to developers. (Hint: Educating developers is marketing to them).",
     "published": false,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://flatlogic.com/blog/wp-content/uploads/2022/09/marketing-to-developers.png"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "category": "Marketing",
     "content": "Let us briefly explain how to use mobile games in a brand strategy and how to build a competitive advantage thanks to them.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-6UKmWS3r34xdjPl20wdld8GZJXLsBGe_w&s"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "category": "Marketing",
     "content": "Marketing has changed drastically over the years from a traditional marketing approach to digital marketing and even at that, we are still seeing different diversities in digital marketing.",
     "published": false,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://userpilot.com/blog/wp-content/uploads/2021/07/What-is-SaaS-Product-Marketing_c8e022987730f090abd070b74caa99f1_2000.png"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "category": "Marketing",
     "content": "That's why there's so much content by dev marketers showing other dev marketers how to promote dev-centric stuff without annoying the technical audience in the process.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://ninjapromo.io/wp-content/uploads/2024/02/Best-Marketing-Strategies-for-Software-Companies.jpg"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "category": "Marketing",
     "content": "Aim to get as many downloads as possible in the first week after launch. The more rapidly your app gets downloads, the higher it will rank in the App Store search results.",
     "published": false,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://www.proideators.com/wp-content/uploads/2023/02/Learn-How-to-Make-Use-of-Mobile-App-Marketing.jpg"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "category": "Marketing",
     "content": "In today's fast-moving world, having a good marketing plan is crucial for making your business stand out in a crowded market and attracting customers.",
     "published": false,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY29LJhZISx0JL-bvea4le_sBzInbNWNlKMQ&s"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "category": "Marketing",
     "content": "These models work very well to kick-off a marketing data driven strategy but they quickly show their limitations. We will discuss these limitations briefly and propose a different approach.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://fastercapital.com/i/Ultimate-FAQ-Propensity-Modeling--What--How--Why--When--How-does-propensity-modeling-integrate-with-other-marketing-strategies--such-as-personalization-and-segmentation.webp"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "category": "Engineering",
     "content": "While relational databases have great tools like SQL, DynamoDB queries look slightly different.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://miro.medium.com/v2/resize:fit:556/1*tTedvyOfnCu_8O26I3vlDA.png"
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "category": "Engineering",
     "content": "If you are updating a text value programatically by using setState.",
     "published": true,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://images-cdn.openxcell.com/wp-content/uploads/2024/07/25082439/reactnative-inner.svg"
   },
   {
     "id": 20,
@@ -177,6 +177,6 @@
     "category": "Engineering",
     "content": "Understanding the differences between these keywords is essential for writing clean, maintainable, and bug-free code. This post explores the distinctions in scope, reassignment and redeclaration, and the best practices for using each declaration type.",
     "published": false,
-    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png"
+    "image": "https://dmitripavlutin.com/javascript-variables-const-let-var/cover.png"
   }
 ]

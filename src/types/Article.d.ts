@@ -1,3 +1,4 @@
+// Defines the structure of an article
 export interface Article {
   id: number;
   title: string;

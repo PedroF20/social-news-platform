@@ -5,8 +5,14 @@ import { useAuth0 } from '@auth0/auth0-react';
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
-
+  const { user, isAuthenticated } = useAuth0();
   const { logout } = useAuth0();
+
+  const isAdmin = user?.['https://auth.mycompany.com/roles']?.includes('admin');
+
+  const manageArticles = () => {
+    navigate('/admin');
+  };
 
   return (
     <nav className="flex justify-between items-center px-4 py-3 bg-gray-100 shadow">
@@ -24,7 +30,16 @@ const Navbar: React.FC = () => {
           isMenuOpen ? 'block' : 'hidden'
         } md:block`}
       >
-        <button className="text-gray-600 hover:text-blue-500 mr-6">
+        {/* Management access only available to authenticated admins */}
+        {isAuthenticated && isAdmin && (
+          <button
+            onClick={manageArticles}
+            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+          >
+            Manage Articles
+          </button>
+        )}
+        <button className="text-gray-600 hover:text-blue-500 mx-6">
           My Bookmarks
         </button>
         <button

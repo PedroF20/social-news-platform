@@ -1,6 +1,6 @@
 # Social News Platform
 
-A social news platform built using React, TypeScript, and Vite. Users can browse, share, and manage news articles, with role-based access for administrators and general users.
+A social news platform built using React, TypeScript, and Vite. Users can browse, read, and manage news articles, with role-based access for administrators and general users.
 
 ## Features
 
@@ -10,13 +10,12 @@ A social news platform built using React, TypeScript, and Vite. Users can browse
   - Regular users can view published articles.
 - **Article Management:**
   - Admins can create draft articles and publish them.
-  - Users can view paginated published articles.
-- **Pagination:** Smooth navigation for articles with "Next" and "Previous" buttons.
+  - All users can view paginated published articles.
+- **Pagination:** Smooth navigation for articles with "Load more" button.
 
 ## Future improvements
 
-- Add image upload feature to the creation/edit.
-- Further improve testing.
+- Add image upload feature to the article creation/edit.
 
 ## Installation
 
@@ -52,8 +51,16 @@ A social news platform built using React, TypeScript, and Vite. Users can browse
    ```
 
 5. Open your browser and navigate to
+
    ```bash
    http://localhost:5173
+   ```
+
+6. (Optional) To run tests:
+
+   ```bash
+   npm run test
+
    ```
 
 ## Project Structure
@@ -78,7 +85,9 @@ social-news-platform/
 │   │   └── Article.ts
 │   ├── App.tsx             # Main application logic
 │   ├── main.tsx            # Entry point for the app
+│   ├── setupTests.ts       # Tests setup file
 │   └── vite-env.d.ts       # Vite environment file
+├── tests                   # Test folder
 ├── .env.local              # Environment variables (not committed)
 ├── package.json            # Project dependencies and scripts
 ├── .eslintrc.json          # Lint configuration

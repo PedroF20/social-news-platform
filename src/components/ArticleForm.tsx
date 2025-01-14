@@ -10,12 +10,14 @@ interface ArticleFormProps {
 }
 
 const ArticleForm: React.FC<ArticleFormProps> = ({ onAddArticle }) => {
+  // State variables for the form
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
   const [published, setPublished] = useState(false);
 
+  // Handles creation and cleanup
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onAddArticle(title, content, description, published);
@@ -46,6 +48,24 @@ const ArticleForm: React.FC<ArticleFormProps> = ({ onAddArticle }) => {
           onChange={(e) => setTitle(e.target.value)}
           className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
           placeholder="Enter the article title"
+        />
+      </div>
+
+      {/* Description Input */}
+      <div>
+        <label
+          htmlFor="description"
+          className="block text-sm font-medium text-gray-700"
+        >
+          Description
+        </label>
+        <input
+          id="title"
+          type="text"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          placeholder="Small description"
         />
       </div>
 

@@ -13,6 +13,7 @@ import FullArticle from './pages/FullArticle';
 import EditArticle from './pages/EditArticle';
 
 const App: React.FC = () => {
+  // Logic to load articles from localStorage to use on the app
   useEffect(() => {
     const loadArticles = async () => {
       const existingArticles = localStorage.getItem('articles');
@@ -32,6 +33,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
+    // Provides the Auth0Context
     <Auth0Provider
       domain={import.meta.env.VITE_AUTH0_DOMAIN}
       clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
@@ -43,6 +45,7 @@ const App: React.FC = () => {
       <Router>
         <Routes>
           {/* Shared Layout route */}
+          {/* These routes require access granted by an Auth0 token */}
           <Route
             path="/"
             element={
@@ -64,6 +67,7 @@ const App: React.FC = () => {
   );
 };
 
+// Auth0 logic
 const RequireAuth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isAuthenticated, loginWithRedirect, isLoading } = useAuth0();
 

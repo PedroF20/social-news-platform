@@ -32,6 +32,7 @@ const FullArticle: React.FC = () => {
       <p className="text-lg text-gray-600 mb-6">{article.description}</p>
       <div className="text-gray-800">{article.content}</div>
 
+      {/* Article editing only available for authenticated admins */}
       {isAuthenticated && isAdmin && (
         <div className="mt-6">
           <button

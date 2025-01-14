@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth0 } from '@auth0/auth0-react';
 import { Article } from '../types/Article';
 
 const ArticlesPage: React.FC = () => {
-  const { user, isAuthenticated } = useAuth0();
   const navigate = useNavigate();
 
+  // Fetches the articles
   const articles: Article[] = JSON.parse(
     localStorage.getItem('articles') || '[]',
   ).filter((article: Article) => article.published);
 
+  // Filter logic
   const categories = ['Engineering', 'Design', 'Marketing'] as const;
   type Category = (typeof categories)[number];
 
@@ -26,33 +26,17 @@ const ArticlesPage: React.FC = () => {
 
   const visibleArticles = filteredArticles.slice(0, visibleCount);
 
-  const isAdmin = user?.['https://auth.mycompany.com/roles']?.includes('admin');
-
   const loadMoreArticles = () => {
     setVisibleCount((prev) => Math.min(prev + 5, filteredArticles.length));
   };
 
+  // Opens full article
   const readMore = (id: number) => {
     navigate(`/article/${id}`);
   };
 
-  const manageArticles = () => {
-    navigate('/admin');
-  };
-
   return (
     <div className="px-4 py-4">
-      {isAuthenticated && isAdmin && (
-        <div className="mb-6">
-          <button
-            onClick={manageArticles}
-            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
-          >
-            Manage Articles
-          </button>
-        </div>
-      )}
-
       {/* First Article */}
       {visibleArticles.length > 0 && (
         <div className="mb-6">
@@ -72,7 +56,7 @@ const ArticlesPage: React.FC = () => {
             <img
               src={visibleArticles[0].image}
               alt={visibleArticles[0].title}
-              className="w-full md:w-1/6 h-auto object-cover rounded"
+              className="w-full md:w-1/6 h-auto object-scale-down rounded"
             />
           </div>
         </div>
@@ -122,7 +106,7 @@ const ArticlesPage: React.FC = () => {
             <img
               src={article.image}
               alt={article.title}
-              className="w-40 h-40 object-cover rounded"
+              className="w-40 h-40 object-scale-down rounded"
             />
           </div>
         ))}

@@ -11,6 +11,7 @@ const AdminDashboard: React.FC = () => {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const navigate = useNavigate();
 
+  // Function to create and add an article to our list
   const addArticle = (
     title: string,
     content: string,
@@ -31,6 +32,7 @@ const AdminDashboard: React.FC = () => {
     window.alert('Article successfully created!');
   };
 
+  // Publishes the article
   const publishArticle = (id: number) => {
     const updatedArticles = articles.map((article) =>
       article.id === id ? { ...article, published: true } : article,
