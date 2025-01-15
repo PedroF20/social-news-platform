@@ -1,7 +1,7 @@
 {
   "name": "social-news-platform",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "PedroF20",
   "type": "module",
   "scripts": {
