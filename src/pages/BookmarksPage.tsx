@@ -71,7 +71,7 @@ const BookmarksPage: React.FC = () => {
                     <BookmarkButton
                       isBookmarked={article.bookmarked!}
                       toggleBookmark={() => toggleBookmark(article.id)}
-                      size={6}
+                      size={10}
                     />
                   </div>
                 </div>

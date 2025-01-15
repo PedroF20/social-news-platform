@@ -69,7 +69,7 @@ const ArticlesPage: React.FC = () => {
                 <BookmarkButton
                   isBookmarked={visibleArticles[0].bookmarked!}
                   toggleBookmark={() => toggleBookmark(visibleArticles[0].id)}
-                  size={6}
+                  size={10}
                 />
               </div>
             </div>
@@ -126,7 +126,7 @@ const ArticlesPage: React.FC = () => {
                 <BookmarkButton
                   isBookmarked={article.bookmarked!}
                   toggleBookmark={() => toggleBookmark(article.id)}
-                  size={6}
+                  size={10}
                 />
               </div>
             </div>
