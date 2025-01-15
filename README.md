@@ -15,7 +15,7 @@ A social news platform built using React, TypeScript, Tailwind and Vite. Users c
 
 ## Future improvements
 
-- Add image upload feature to the article creation/edit.
+- Add image manipulation on article creation/edit.
 
 ## Installation
 

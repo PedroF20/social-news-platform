@@ -23,6 +23,8 @@ const AdminDashboard: React.FC = () => {
       title,
       content,
       description,
+      image:
+        'https://edge-content-cdn.swordhealth.com/sword_kit_showing_tablet_and_package_326aade990/sword_kit_showing_tablet_and_package_326aade990.png', // TODO
       published: published,
       category: 'Engineering', // Default category
     };
