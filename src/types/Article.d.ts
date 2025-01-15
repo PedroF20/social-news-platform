@@ -7,4 +7,5 @@ export interface Article {
   category: 'Engineering' | 'Design' | 'Marketing';
   content: string;
   published: boolean;
+  bookmarked?: boolean;
 }

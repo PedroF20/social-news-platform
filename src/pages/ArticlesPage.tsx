@@ -5,15 +5,16 @@ import { Article } from '../types/Article';
 const ArticlesPage: React.FC = () => {
   const navigate = useNavigate();
 
-  // Fetches the articles
-  const articles: Article[] = JSON.parse(
-    localStorage.getItem('articles') || '[]',
-  ).filter((article: Article) => article.published);
+  // Fetch articles from localStorage
+  const [articles, setArticles] = useState<Article[]>(
+    JSON.parse(localStorage.getItem('articles') || '[]').filter(
+      (article: Article) => article.published,
+    ),
+  );
 
-  // Filter logic
+  // Category and filtering
   const categories = ['Engineering', 'Design', 'Marketing'] as const;
   type Category = (typeof categories)[number];
-
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(
     null,
   );
@@ -30,13 +31,24 @@ const ArticlesPage: React.FC = () => {
     setVisibleCount((prev) => Math.min(prev + 5, filteredArticles.length));
   };
 
-  // Opens full article
+  // Bookmark toggle
+  const toggleBookmark = (id: number) => {
+    const updatedArticles = articles.map((article) =>
+      article.id === id
+        ? { ...article, bookmarked: !article.bookmarked }
+        : article,
+    );
+    setArticles(updatedArticles);
+    localStorage.setItem('articles', JSON.stringify(updatedArticles));
+  };
+
+  // Open full article
   const readMore = (id: number) => {
     navigate(`/article/${id}`);
   };
 
   return (
-    <div className="px-4 py-4">
+    <div className="px-4 py-8">
       {/* First Article */}
       {visibleArticles.length > 0 && (
         <div className="mb-6">
@@ -46,12 +58,24 @@ const ArticlesPage: React.FC = () => {
                 {visibleArticles[0].title}
               </h2>
               <p className="text-gray-600 mb-4">{visibleArticles[0].content}</p>
-              <button
-                onClick={() => readMore(visibleArticles[0].id)}
-                className="mt-4 px-4 py-2 border border-blue-500 text-blue-500 rounded-full bg-transparent hover:bg-blue-500 hover:text-white"
-              >
-                Read More
-              </button>
+              <div className="flex gap-4">
+                <button
+                  onClick={() => readMore(visibleArticles[0].id)}
+                  className="px-4 py-2 border border-blue-500 text-blue-500 rounded-full bg-transparent hover:bg-blue-500 hover:text-white"
+                >
+                  Read More
+                </button>
+                <button
+                  onClick={() => toggleBookmark(visibleArticles[0].id)}
+                  className={`px-4 py-2 rounded-full border ${
+                    visibleArticles[0].bookmarked
+                      ? 'bg-yellow-500 text-white'
+                      : 'bg-gray-300 text-black hover:bg-gray-400'
+                  }`}
+                >
+                  {visibleArticles[0].bookmarked ? 'Unbookmark' : 'Bookmark'}
+                </button>
+              </div>
             </div>
             <img
               src={visibleArticles[0].image}
@@ -88,7 +112,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* Remaining Articles */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {visibleArticles.slice(1).map((article: Article) => (
+        {visibleArticles.slice(1).map((article) => (
           <div
             key={article.id}
             className="p-4 border rounded shadow bg-white flex items-center gap-6"
@@ -96,12 +120,24 @@ const ArticlesPage: React.FC = () => {
             <div>
               <h3 className="text-lg font-bold">{article.title}</h3>
               <p className="text-gray-600">{article.content}</p>
-              <button
-                onClick={() => readMore(article.id)}
-                className="mt-4 px-4 py-2 border border-blue-500 text-blue-500 rounded-full bg-transparent hover:bg-blue-500 hover:text-white"
-              >
-                Read More
-              </button>
+              <div className="flex gap-4 mt-4">
+                <button
+                  onClick={() => readMore(article.id)}
+                  className="px-4 py-2 border border-blue-500 text-blue-500 rounded-full bg-transparent hover:bg-blue-500 hover:text-white"
+                >
+                  Read More
+                </button>
+                <button
+                  onClick={() => toggleBookmark(article.id)}
+                  className={`px-4 py-2 rounded-full border ${
+                    article.bookmarked
+                      ? 'bg-yellow-500 text-white'
+                      : 'bg-gray-300 text-black hover:bg-gray-400'
+                  }`}
+                >
+                  {article.bookmarked ? 'Unbookmark' : 'Bookmark'}
+                </button>
+              </div>
             </div>
             <img
               src={article.image}

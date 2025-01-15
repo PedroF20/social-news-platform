@@ -11,6 +11,7 @@ import ArticlesPage from './pages/ArticlesPage';
 import Layout from './components/Layout';
 import FullArticle from './pages/FullArticle';
 import EditArticle from './pages/EditArticle';
+import BookmarksPage from './pages/BookmarksPage';
 
 const App: React.FC = () => {
   // Logic to load articles from localStorage to use on the app
@@ -57,6 +58,7 @@ const App: React.FC = () => {
             <Route index element={<ArticlesPage />} /> {/* Default path */}
             <Route path="/article/:id" element={<FullArticle />} />
             <Route path="/edit-article/:id" element={<EditArticle />} />
+            <Route path="bookmarks" element={<BookmarksPage />} />
             <Route path="admin" element={<AdminDashboard />} />
           </Route>
           {/* Fallback route */}
