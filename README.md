@@ -82,7 +82,7 @@ social-news-platform/
 │   │   └── Article.ts
 │   ├── App.tsx             # Main application logic
 │   ├── utils/              # Folder with utilities
-|   |   └── constants.ts
+│   │   └── constants.ts
 │   ├── main.tsx            # Entry point for the app
 │   ├── setupTests.ts       # Tests setup file
 │   └── vite-env.d.ts       # Vite environment file
