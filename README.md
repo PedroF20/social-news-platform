@@ -81,6 +81,8 @@ social-news-platform/
 │   ├── types/              # TypeScript types
 │   │   └── Article.ts
 │   ├── App.tsx             # Main application logic
+│   ├── utils/              # Folder with utilities
+|   |   └── constants.ts
 │   ├── main.tsx            # Entry point for the app
 │   ├── setupTests.ts       # Tests setup file
 │   └── vite-env.d.ts       # Vite environment file

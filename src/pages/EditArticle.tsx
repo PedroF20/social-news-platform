@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import FormField from '../components/FormField';
 import { Article } from '../types/Article';
+import { categories } from '../utils/constants';
 
 const EditArticle: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -11,7 +13,6 @@ const EditArticle: React.FC = () => {
   );
   const article = articles.find((a) => a.id === Number(id));
 
-  // State variables for the article edition
   const [title, setTitle] = useState(article?.title || '');
   const [content, setContent] = useState(article?.content || '');
   const [description, setDescription] = useState(article?.description || '');
@@ -22,7 +23,6 @@ const EditArticle: React.FC = () => {
     return <p className="p-6 text-red-500">Article not found.</p>;
   }
 
-  // Saves the edited article
   const handleSave = () => {
     const updatedArticles = articles.map((a) =>
       a.id === article.id
@@ -36,13 +36,20 @@ const EditArticle: React.FC = () => {
           }
         : a,
     );
-
     localStorage.setItem('articles', JSON.stringify(updatedArticles));
-    navigate(`/article/${article.id}`); // Redirect back to the full article page
+    window.alert('Article successfully deleted!');
+    navigate(`/article/${article.id}`);
+  };
+
+  // Deletes the article
+  const handleDelete = () => {
+    const updatedArticles = articles.filter((a) => a.id !== article.id);
+    localStorage.setItem('articles', JSON.stringify(updatedArticles));
+    navigate('/'); // Redirect to the homepage after deletion
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-4xl">
       <h1 className="text-2xl font-bold mb-6">Edit Article</h1>
       <form
         onSubmit={(e) => {
@@ -51,108 +58,58 @@ const EditArticle: React.FC = () => {
         }}
         className="space-y-4"
       >
-        {/* Title Input */}
-        <div>
-          <label
-            htmlFor="title"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Title
-          </label>
-          <input
-            id="title"
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            required
-          />
-        </div>
-
-        {/* Description Input */}
-        <div>
-          <label
-            htmlFor="description"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Description
-          </label>
-          <textarea
-            id="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            rows={3}
-            required
-          />
-        </div>
-
-        {/* Content Input */}
-        <div>
-          <label
-            htmlFor="content"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Content
-          </label>
-          <textarea
-            id="content"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-            className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-            rows={6}
-            required
-          />
-        </div>
-
-        {/* Category Selector */}
-        <div>
-          <label
-            htmlFor="category"
-            className="block text-sm font-medium text-gray-700"
-          >
-            Category
-          </label>
-          <select
-            id="category"
-            value={category}
-            onChange={(e) =>
-              setCategory(
-                e.target.value as 'Engineering' | 'Design' | 'Marketing',
-              )
-            }
-            className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-          >
-            <option value="Engineering">Engineering</option>
-            <option value="Design">Design</option>
-            <option value="Marketing">Marketing</option>
-          </select>
-        </div>
-
-        {/* Published Toggle */}
-        <div className="flex items-center gap-4">
-          <label
-            htmlFor="published"
-            className="text-sm font-medium text-gray-700"
-          >
-            Published:
-          </label>
-          <input
-            id="published"
-            type="checkbox"
-            checked={published}
-            onChange={(e) => setPublished(e.target.checked)}
-            className="rounded border-gray-300 text-blue-600 shadow-sm focus:ring-blue-500"
-          />
-        </div>
-
-        {/* Action Buttons */}
+        <FormField
+          id="title"
+          label="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <FormField
+          id="description"
+          label="Description"
+          type="textarea"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+        <FormField
+          id="content"
+          label="Content"
+          type="textarea"
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+        />
+        <FormField
+          id="category"
+          label="Category"
+          type="select"
+          value={category}
+          onChange={(e) =>
+            setCategory(
+              e.target.value as 'Engineering' | 'Design' | 'Marketing',
+            )
+          }
+          options={categories}
+        />
+        <FormField
+          id="published"
+          label="Published"
+          type="checkbox"
+          value={published}
+          onChange={(e) => setPublished((e.target as HTMLInputElement).checked)}
+        />
         <div className="flex gap-4">
           <button
             type="submit"
             className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
           >
             Save
+          </button>
+          <button
+            type="button"
+            onClick={handleDelete}
+            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+          >
+            Delete
           </button>
           <button
             type="button"
