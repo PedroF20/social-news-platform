@@ -1,6 +1,6 @@
 # Social News Platform
 
-A social news platform built using React, TypeScript, and Vite. Users can browse, read, and manage news articles, with role-based access for administrators and general users.
+A social news platform built using React, TypeScript, Tailwind and Vite. Users can browse, read, and manage news articles, with role-based access for administrators and general users.
 
 ## Features
 
@@ -58,13 +58,6 @@ A social news platform built using React, TypeScript, and Vite. Users can browse
 
 6. Log-in or register in order to use the application.
 
-7. (Optional) To run tests:
-
-   ```bash
-   npm run test
-
-   ```
-
 ## Project Structure
 
 ```bash
@@ -79,9 +72,11 @@ social-news-platform/
 │   ├── pages/              # Page components
 │   │   ├── AdminDashboard.tsx
 │   │   ├── FullArticle.tsx
+│   │   ├── BookmarksPage.tsx
 │   │   ├── EditArticle.tsx
 │   │   └── ArticlesPage.tsx
 │   ├── styles/             # CSS styles
+│   │   ├── App.css
 │   │   └── index.css
 │   ├── types/              # TypeScript types
 │   │   └── Article.ts
@@ -110,6 +105,7 @@ social-news-platform/
 - `npm run build`: Build the application for production.
 - `npm run preview`: Preview the production build.
 - `npm run lint`: Run linting checks.
+- `npm run test`: Run tests.
 - `npm run format`: Format the code using Prettier.
 
 ## License
