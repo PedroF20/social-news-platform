@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Article } from '../types/Article';
+import BookmarkButton from '../components/BookmarkButton';
 
 const BookmarksPage: React.FC = () => {
   const navigate = useNavigate();
@@ -16,11 +17,13 @@ const BookmarksPage: React.FC = () => {
     navigate(`/article/${id}`);
   };
 
-  const removeBookmark = (id: number) => {
+  const toggleBookmark = (id: number) => {
     // Update articles in localStorage
     const allArticles = JSON.parse(localStorage.getItem('articles') || '[]');
     const updatedArticles = allArticles.map((article: Article) =>
-      article.id === id ? { ...article, bookmarked: false } : article,
+      article.id === id
+        ? { ...article, bookmarked: !article.bookmarked }
+        : article,
     );
     localStorage.setItem('articles', JSON.stringify(updatedArticles));
 
@@ -65,15 +68,11 @@ const BookmarksPage: React.FC = () => {
                     <span className="text-sm text-gray-400">
                       {article.category}
                     </span>
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation(); // Prevent triggering the article click
-                        removeBookmark(article.id);
-                      }}
-                      className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-                    >
-                      Remove Bookmark
-                    </button>
+                    <BookmarkButton
+                      isBookmarked={article.bookmarked!}
+                      toggleBookmark={() => toggleBookmark(article.id)}
+                      size={6}
+                    />
                   </div>
                 </div>
               ))}

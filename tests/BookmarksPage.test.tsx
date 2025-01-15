@@ -71,7 +71,7 @@ describe('BookmarksPage', () => {
     );
 
     // Find the button by exact text match
-    const removeButtons = screen.getAllByText(/Remove Bookmark/i);
+    const removeButtons = screen.getAllByTitle(/Remove Bookmark/i);
 
     // Click the first "Remove Bookmark" button
     fireEvent.click(removeButtons[0]);

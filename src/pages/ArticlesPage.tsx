@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Article } from '../types/Article';
+import BookmarkButton from '../components/BookmarkButton';
 
 const ArticlesPage: React.FC = () => {
   const navigate = useNavigate();
@@ -65,16 +66,11 @@ const ArticlesPage: React.FC = () => {
                 >
                   Read More
                 </button>
-                <button
-                  onClick={() => toggleBookmark(visibleArticles[0].id)}
-                  className={`px-4 py-2 rounded-full border ${
-                    visibleArticles[0].bookmarked
-                      ? 'bg-yellow-500 text-white'
-                      : 'bg-gray-300 text-black hover:bg-gray-400'
-                  }`}
-                >
-                  {visibleArticles[0].bookmarked ? 'Unbookmark' : 'Bookmark'}
-                </button>
+                <BookmarkButton
+                  isBookmarked={visibleArticles[0].bookmarked!}
+                  toggleBookmark={() => toggleBookmark(visibleArticles[0].id)}
+                  size={6}
+                />
               </div>
             </div>
             <img
@@ -127,16 +123,11 @@ const ArticlesPage: React.FC = () => {
                 >
                   Read More
                 </button>
-                <button
-                  onClick={() => toggleBookmark(article.id)}
-                  className={`px-4 py-2 rounded-full border ${
-                    article.bookmarked
-                      ? 'bg-yellow-500 text-white'
-                      : 'bg-gray-300 text-black hover:bg-gray-400'
-                  }`}
-                >
-                  {article.bookmarked ? 'Unbookmark' : 'Bookmark'}
-                </button>
+                <BookmarkButton
+                  isBookmarked={article.bookmarked!}
+                  toggleBookmark={() => toggleBookmark(article.id)}
+                  size={6}
+                />
               </div>
             </div>
             <img
