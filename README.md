@@ -68,6 +68,7 @@ social-news-platform/
 │   │   ├── ArticleForm.tsx
 │   │   ├── Navbar.tsx
 │   │   ├── Layout.tsx
+│   │   ├── BookmarkButton.tsx
 │   │   └── Footer.tsx
 │   ├── pages/              # Page components
 │   │   ├── AdminDashboard.tsx
