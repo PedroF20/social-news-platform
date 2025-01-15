@@ -58,7 +58,9 @@ const ArticlesPage: React.FC = () => {
               <h2 className="text-2xl font-bold mb-2">
                 {visibleArticles[0].title}
               </h2>
-              <p className="text-gray-600 mb-4">{visibleArticles[0].content}</p>
+              <p className="text-gray-600 mb-4">
+                {visibleArticles[0].description}
+              </p>
               <div className="flex gap-4">
                 <button
                   onClick={() => readMore(visibleArticles[0].id)}
@@ -115,7 +117,7 @@ const ArticlesPage: React.FC = () => {
           >
             <div>
               <h3 className="text-lg font-bold">{article.title}</h3>
-              <p className="text-gray-600">{article.content}</p>
+              <p className="text-gray-600">{article.description}</p>
               <div className="flex gap-4 mt-4">
                 <button
                   onClick={() => readMore(article.id)}

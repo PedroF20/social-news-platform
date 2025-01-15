@@ -63,7 +63,7 @@ const AdminDashboard: React.FC = () => {
                 >
                   <h3 className="text-lg font-bold mb-2">{article.title}</h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    {article.content.substring(0, 100)}...
+                    {article.description}
                   </p>
                   <div className="flex justify-between items-center">
                     <button
