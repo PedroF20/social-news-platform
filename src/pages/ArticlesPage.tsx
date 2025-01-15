@@ -75,11 +75,14 @@ const ArticlesPage: React.FC = () => {
                 />
               </div>
             </div>
-            <img
-              src={visibleArticles[0].image}
-              alt={visibleArticles[0].title}
-              className="w-full md:w-1/6 h-auto object-scale-down rounded"
-            />
+            {/* Align image to the right */}
+            <div className="w-full md:w-auto md:ml-auto">
+              <img
+                src={visibleArticles[0].image}
+                alt={visibleArticles[0].title}
+                className="w-40 md:w-48 h-auto object-cover rounded"
+              />
+            </div>
           </div>
         </div>
       )}
@@ -115,7 +118,7 @@ const ArticlesPage: React.FC = () => {
             key={article.id}
             className="p-4 border rounded shadow bg-white flex items-center gap-6"
           >
-            <div>
+            <div className="flex-1">
               <h3 className="text-lg font-bold">{article.title}</h3>
               <p className="text-gray-600">{article.description}</p>
               <div className="flex gap-4 mt-4">
@@ -132,11 +135,14 @@ const ArticlesPage: React.FC = () => {
                 />
               </div>
             </div>
-            <img
-              src={article.image}
-              alt={article.title}
-              className="w-40 h-40 object-scale-down rounded"
-            />
+            {/* Align image to the right */}
+            <div className="w-full md:w-auto md:ml-auto">
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-40 h-40 object-cover rounded"
+              />
+            </div>
           </div>
         ))}
       </div>
