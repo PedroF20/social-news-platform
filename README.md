@@ -56,7 +56,9 @@ A social news platform built using React, TypeScript, and Vite. Users can browse
    http://localhost:5173
    ```
 
-6. (Optional) To run tests:
+6. Log-in or register in order to use the application.
+
+7. (Optional) To run tests:
 
    ```bash
    npm run test
